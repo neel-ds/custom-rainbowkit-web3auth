@@ -4,8 +4,8 @@ import { OpenloginAdapter } from "@web3auth/openlogin-adapter";
 import { CHAIN_NAMESPACES } from "@web3auth/base";
 import { TorusWalletConnectorPlugin } from "@web3auth/torus-wallet-connector-plugin";
 
-const name = "My App Name";
-const iconUrl = "https://web3auth.io/docs/contents/logo-ethereum.png";
+const name = "Google";
+const iconUrl = "https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg";
 
 export const Connector = ({ chains }) => {
   // Create Web3Auth Instance
@@ -22,7 +22,7 @@ export const Connector = ({ chains }) => {
     },
     uiConfig: {
       theme: "dark",
-      loginMethodsOrder: ["facebook", "google"],
+      loginMethodsOrder: ["google", "facebook"],
       defaultLanguage: "en",
       appLogo: "https://web3auth.io/images/w3a-L-Favicon-1.svg", // Your App Logo Here
       modalZIndex: "2147483647",
@@ -35,7 +35,7 @@ export const Connector = ({ chains }) => {
       network: "cyan",
       uxMode: "popup", 
       whiteLabel: {
-        name: "Your app Name",
+        name: "Torus",
         logoLight: "https://web3auth.io/images/w3a-L-Favicon-1.svg",
         logoDark: "https://web3auth.io/images/w3a-D-Favicon-1.svg",
         defaultLanguage: "en",
